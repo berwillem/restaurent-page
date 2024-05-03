@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shoping card</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="nav-container">
+      <nav>
+        <h1>Logo</h1>
+        <i class="bx bx-cart cart" onclick="openSideBar()"></i>
+      </nav>
+    </div>
+    <div class="menu">
+      <div class="item">
+        <img src="./assets/download.jpg" alt="item" />
+        <h2>plat 1</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <i class="bx bx-plus plus" onclick="addSelectedItem(1)"></i>
+      </div>
+      <div class="item">
+        <img src="./assets/img2.jpg" alt="item" />
+        <h2>plat 2</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <i class="bx bx-plus plus" onclick="addSelectedItem(2)"></i>
+      </div>
+      <div class="item">
+        <img src="./assets/img3.jpg" alt="item" />
+        <h2>plat 3</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <i class="bx bx-plus plus" onclick="addSelectedItem(3)"></i>
+      </div>
+      <div class="side-bar">
+        <div class="side-container">
+          <i class="bx bxs-x-circle close" onclick="closeSideBar()"></i>
+          <h1>shoping Card</h1>
+          <br />
+          <br />
+          <br />
+          <div class="card-list"></div>
+          <p class="total-amount">Total: $0</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script3.js"></script>
+</html>
